@@ -3,18 +3,18 @@
   border-radius: 10px;
 }
 
-.card__author-details {
-  margin-top: 1.25rem;
-}
-
 .card__author-details img {
   aspect-ratio: 1;
   border-radius: 50%;
   width: 40px;
 }
 
-.card__body-copy {
-  margin-top: 0.75rem;
+.card__share-widget {
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .card__info {
