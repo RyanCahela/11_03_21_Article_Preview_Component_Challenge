@@ -15,7 +15,20 @@
 
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap, 0);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .ml-auto {
@@ -106,4 +119,8 @@
 
 .bg-white {
   background-color: hsl(var(--color-white));
+}
+
+.rounded-corners {
+  border-radius: 10px;
 }

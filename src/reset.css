@@ -6,6 +6,12 @@
 
 body {
   margin: 0;
+  height: 100vh;
+
+  /* normally wouldn't do this but there is only one child and I want to center it*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {

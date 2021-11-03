@@ -1,3 +1,28 @@
-.article-details {
-  align-items: center;
+.card {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card__author-details {
+  margin-top: 1.25rem;
+}
+
+.card__author-details img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  width: 40px;
+}
+
+.card__body-copy {
+  margin-top: 0.75rem;
+}
+
+.card__info {
+  padding: 2rem 2.5rem;
+}
+
+.card__hero img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
 }

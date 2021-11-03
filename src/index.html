@@ -17,29 +17,47 @@
     <title>11_03_21_Article_Preview_Component_Challenge</title>
   </head>
   <body class="bg-very-light ff-sans-serif">
-    <div class="container">
-      <div class="flex bg-white">
-        <div class="preview-image">
+    <div class="container rounded-corners">
+      <div class="card flex bg-white">
+        <div class="card__hero">
           <img src="./images/drawers.jpg" src="cabinet with green drawers" />
         </div>
-        <div class="">
+        <div class="card__info">
           <h1 class="fc-dark fs-500 line-height-md letter-spacing-md fw-bold">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </h1>
-          <p class="fc-medium fs-300 line-height-sm letter-spacing-sm">
+          <p
+            class="
+              card__body-copy
+              fc-medium
+              fs-300
+              line-height-sm
+              letter-spacing-sm
+            "
+          >
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I’ve got some simple tips to help
             you make any room feel complete.
           </p>
-          <div class="article-details flex">
-            <div class="flex">
-              <img src="images/avatar-michelle.jpg" alt="picture of michelle" />
-              <h2 class="fc-dark">Michelle Appleton</h2>
-              <p class="fc-light">28 Jun 2020</p>
+          <div class="flex align-center" style="--gap: 1rem">
+            <div class="card__author-details flex">
+              <img
+                class="avatar"
+                src="images/avatar-michelle.jpg"
+                alt="picture of michelle"
+              />
+              <div class="flex-col justify-between">
+                <h2 class="fc-dark fs-300 fw-bold">Michelle Appleton</h2>
+                <p class="fc-light fs-300">28 Jun 2020</p>
+              </div>
             </div>
-            <div class="ml-auto bg-dark">
-              <img src="images/icon-share.svg" alt="share icon" />
+            <div class="ml-auto bg-dark fc-white">
+              <img
+                class="fc-white"
+                src="images/icon-share.svg"
+                alt="share icon"
+              />
             </div>
           </div>
         </div>
