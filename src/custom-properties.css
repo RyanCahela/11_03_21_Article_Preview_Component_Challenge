@@ -1,3 +1,7 @@
+/**************************\
+  Custom Properties
+\**************************/
+
 :root {
   /**************************\
   Colors
@@ -6,13 +10,16 @@
   --color-medium: 214 17% 51%;
   --color-light: 212 23% 69%;
   --color-very-light: 210 46% 95%;
-  --color-white: 0 0 100%;
+  --color-white: 0 0% 100%;
+
   /**************************\
   Typography
   \**************************/
   --fs-300: 0.8125rem;
   --fs-400: 1rem;
   --fs-500: 1.25rem;
+
+  --ff-sans-serif: "Manrope", sans-serif;
 
   --fw-regular: 500;
   --fw-bold: 700;
