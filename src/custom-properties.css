@@ -23,4 +23,17 @@
 
   --fw-regular: 500;
   --fw-bold: 700;
+
+  --letter-spacing-md: 0.25px;
+  --letter-spacing-sm: 0.12px;
+  --letter-spacing-lg: 5px;
+
+  --line-height-sm: 20px;
+  --line-height-md: 24px;
+  --line-height-lg: 28px;
+
+  /**************************\
+  Layout
+  \**************************/
+  --card__info-padding-inline: 2rem;
 }

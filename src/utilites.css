@@ -6,9 +6,8 @@
   Layout
 \**************************/
 .container {
-  max-width: 45.625rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -89,22 +88,6 @@
   font-family: var(--ff-sans-serif);
 }
 
-.letter-spacing-sm {
-  letter-spacing: 0.12px;
-}
-
-.letter-spacing-md {
-  letter-spacing: 0.25px;
-}
-
-.line-height-sm {
-  line-height: 20px;
-}
-
-.line-height-md {
-  line-height: 28px;
-}
-
 /**************************\
   Backgrounds 
 \**************************/
@@ -130,4 +113,9 @@
 
 .rounded-corners {
   border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+  opacity: 0 !important;
 }
