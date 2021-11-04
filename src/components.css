@@ -7,20 +7,22 @@
   position: relative;
 }
 
-.card__author-details img {
+.card__avatar {
   aspect-ratio: 1;
   border-radius: 50%;
   width: 40px;
+  overflow: hidden;
 }
 
-.card__share-icon,
-.card__share-widget__share-icon {
+.card__share-icon {
   aspect-ratio: 1;
   cursor: pointer;
   display: grid;
   align-items: center;
   padding-inline: 1rem;
   border-radius: 50%;
+  background-color: hsl(var(--color-dark));
+  z-index: 10;
 }
 
 .card__share-widget {
@@ -42,15 +44,6 @@
   align-items: center;
   font-weight: 500;
   align-self: center;
-}
-
-.card__share-widget__btn {
-  aspect-ratio: 1;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  border-radius: 50%;
 }
 
 .card__info {
