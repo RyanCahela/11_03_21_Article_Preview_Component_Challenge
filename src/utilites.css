@@ -116,6 +116,6 @@
 }
 
 .hidden {
-  display: none;
-  opacity: 0 !important;
+  z-index: -100;
+  opacity: 0.2 !important;
 }
