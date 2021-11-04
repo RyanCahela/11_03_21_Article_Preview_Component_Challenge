@@ -21,18 +21,18 @@
   align-items: center;
   padding-inline: 1rem;
   border-radius: 50%;
-  background-color: hsl(var(--color-dark));
+  background-color: hsl(var(--color-medium));
   z-index: 10;
 }
 
 .card__share-widget {
   position: absolute;
   bottom: 0;
-  left: 0vw;
+  left: 0;
   right: 0;
   padding-inline: var(--card__info-padding-inline);
-  padding-block: 1.375rem;
-  opacity: 1;
+  padding-bottom: calc(1.5rem);
+  padding-top: 2rem;
   transition: opacity 1s ease-in-out;
   z-index: 1;
 }
@@ -44,6 +44,10 @@
   align-items: center;
   font-weight: 500;
   align-self: center;
+}
+
+.card__share-widget > * + * {
+  margin-left: 1rem;
 }
 
 .card__info {
