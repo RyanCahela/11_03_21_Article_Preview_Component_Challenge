@@ -14,8 +14,36 @@
   overflow: hidden;
 }
 
+.card__body {
+  font-size: var(--fs-300);
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-sm);
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+}
+
 .card__details {
   margin-top: 2rem;
+  align-items: center;
+}
+
+.card__heading {
+  letter-spacing: var(--letter-spacing-sm);
+  line-height: var(--line-height-md);
+  font-size: var(--fs-400);
+}
+
+.card__hero img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.card__info {
+  --card-info-padding-inline: 2rem;
+  padding-top: 2.25rem;
+  padding-inline: var(--card-info-padding-inline);
+  padding-bottom: 1.25rem;
 }
 
 .card__share-icon {
@@ -32,13 +60,15 @@
 .card__share-widget {
   position: absolute;
   bottom: 0;
+  flex-direction: column;
   left: 0;
   right: 0;
   padding-inline: var(--card__info-padding-inline);
   padding-bottom: 2rem;
   padding-top: 2rem;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   z-index: 1;
+  gap: 1rem;
 }
 
 .card__share-widget h2 {
@@ -50,34 +80,12 @@
   align-self: center;
 }
 
-.card__share-widget > * + * {
-  margin-left: 1rem;
-}
-
-.card__info {
-  --card-info-padding-inline: 2rem;
-  padding-top: 2.25rem;
-  padding-inline: var(--card-info-padding-inline);
-  padding-bottom: 1.25rem;
-}
-
-.card__heading {
-  letter-spacing: var(--letter-spacing-sm);
-  line-height: var(--line-height-md);
-}
-
-.card__body {
-  font-size: var(--fs-300);
-  line-height: var(--line-height-sm);
-  letter-spacing: var(--letter-spacing-sm);
-  margin-top: 0.75rem;
-  margin-bottom: 2rem;
-}
-
-.card__hero img {
-  height: 100%;
-  object-fit: cover;
-  object-position: left;
+/* to account for share icon overflow on ultra small phone screens */
+@media screen and (min-width: 350px) {
+  .card__share-widget {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -112,7 +120,7 @@
     left: initial;
     bottom: 35%;
     top: initial;
-    transform: translateX(24%);
+    transform: translateX(26%);
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-inline: 2rem;
