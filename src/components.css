@@ -1,10 +1,10 @@
 .card {
-  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
   max-width: 45.625rem;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .card__avatar {
@@ -70,6 +70,7 @@
   font-size: var(--fs-300);
   line-height: var(--line-height-sm);
   letter-spacing: var(--letter-spacing-sm);
+  margin-top: 0.75rem;
   margin-bottom: 2rem;
 }
 
@@ -82,16 +83,19 @@
 @media screen and (min-width: 640px) {
   .card {
     flex-direction: row;
-  }
-
-  .card__hero img {
-    width: 17.8125rem;
+    overflow: visible;
   }
 
   .card__heading {
     letter-spacing: var(--letter-spacing-md);
     font-size: var(--fs-500);
     line-height: var(--line-height-lg);
+  }
+
+  .card__hero {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
   }
 
   .card__info {
@@ -102,7 +106,28 @@
     position: relative;
   }
 
-  .card__share-widget__share-icon {
-    display: none;
+  .card__share-widget {
+    position: absolute;
+    right: 0%;
+    left: initial;
+    bottom: 35%;
+    top: initial;
+    transform: translateX(24%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-inline: 2rem;
+    border-radius: 10px;
+  }
+
+  .card__share-widget::after {
+    content: "";
+    background-color: hsl(var(--color-dark));
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    clip-path: polygon(48% 64%, 0 0, 100% 0);
   }
 }
