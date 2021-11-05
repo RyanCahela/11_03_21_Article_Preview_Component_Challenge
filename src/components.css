@@ -133,7 +133,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    bottom: 0;
+    bottom: 1px;
     left: 50%;
     transform: translate(-50%, 100%);
     clip-path: polygon(48% 64%, 0 0, 100% 0);
